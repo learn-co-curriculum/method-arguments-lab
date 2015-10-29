@@ -63,7 +63,7 @@ ArgumentError:
        wrong number of arguments (1 for 0)
 ```
 
-Now we have an ArgumentError. The test is trying to call our `#introduction` method with an argument but we haven't defined our method to take in any arguments. 
+Now we have an ArgumentError. The test is trying to call our `#introduction` method with an argument (notice it says `1`) but we haven't defined our method to take in any arguments, the `for 0` part of the error message.
 
 Let's fix that now:
 
