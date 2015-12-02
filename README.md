@@ -114,3 +114,5 @@ Run the test again and we should be passing the first of our two tests. Use the 
 ### The `#introduction_with_language` Method
 
 Define a method, `#introduction_with_language` that takes in two arguments, `name` and `language` and outputs the phrase: `"Hi, my name is #{name} and I am learning to program in #{language}."
+
+<a href='https://learn.co/lessons/method-arguments-lab' data-visibility='hidden'>View this lesson on Learn.co</a>
