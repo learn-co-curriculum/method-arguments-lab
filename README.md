@@ -115,4 +115,4 @@ Run the test again and we should be passing the first of our two tests. Use the 
 
 Define a method, `#introduction_with_language` that takes in two arguments, `name` and `language` and outputs the phrase: `"Hi, my name is #{name} and I am learning to program in #{language}."
 
-<a href='https://learn.co/lessons/method-arguments-lab' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/method-arguments-lab' title='Method Arguments Lab'>Method Arguments Lab</a> on Learn.co and start learning to code for free.</p>
