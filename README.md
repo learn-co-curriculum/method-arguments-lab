@@ -7,6 +7,8 @@
 
 ## Instructions
 
+Hi Chip~!!!
+
 You'll be coding your methods in `lib/introduction.rb`. 
 
 ### The `#introduction` Method
