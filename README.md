@@ -50,12 +50,16 @@ Now we'll run our test suite again. You should see the following error:
 Failures:
 
   1) #introduction takes in an argument of a name and puts out a phrase with that name using string interpolation
-     Failure/Error: expect{introduction("Josh")}.to output("Hi, my name is Josh.\n").to_stdout
+     Failure/Error:
+       def introduction
+       end
+
      ArgumentError:
-       wrong number of arguments (1 for 0)
-     # ./lib/introduction.rb:9:in `introduction'
+       wrong number of arguments (given 1, expected 0)
+     # ./lib/introduction.rb:1:in `introduction'
      # ./spec/introduction_spec.rb:5:in `block (3 levels) in <top (required)>'
      # ./spec/introduction_spec.rb:5:in `block (2 levels) in <top (required)>'
+
 ```
 
 Once again the important part of this error message is the part where the type
@@ -63,12 +67,12 @@ of error is described:
 
 ```bash
 ArgumentError:
-       wrong number of arguments (1 for 0)
+       wrong number of arguments (given 1, expected 0)
 ```
 
 Now we have an ArgumentError. The test is trying to call our `#introduction`
-method with an argument (notice it says `1`) but we haven't defined our method
-to take in any arguments, the `for 0` part of the error message.
+method with an argument (notice it says `given 1`) but we haven't defined our method
+to take in any arguments, the `expected 0` part of the error message.
 
 Let's fix that now:
 
@@ -86,6 +90,7 @@ Failures:
 
   1) #introduction takes in an argument of a name and puts out a phrase with that name using string interpolation
      Failure/Error: expect{introduction("Josh")}.to output("Hi, my name is Josh.\n").to_stdout
+
        expected block to output "Hi, my name is Josh.\n" to stdout, but output nothing
        Diff:
        @@ -1,2 +1 @@
@@ -121,7 +126,3 @@ test output and the procedure we just followed to get the second test passing.
 Define a method, `#introduction_with_language` that takes in two arguments,
 `name` and `language` and outputs the phrase: `"Hi, my name is #{name} and I am
 learning to program in #{language}."
-
-
-
-
