@@ -14,8 +14,7 @@ You'll be coding your methods in `lib/introduction.rb`.
 
 #### The `#introduction` Method
 
-Run the test suite to get started. To do that, run `learn test` in
-your terminal. Let's take a look at the first error:
+We'll be using our test errors to guide us through the requirements for this lab, so let's run the test suite to get started. To do that, run `learn test` in your terminal. Let's take a look at the first error:
 
 ```bash
 Failures:
