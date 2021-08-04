@@ -12,11 +12,13 @@
 
 You'll be coding your methods in `lib/introduction.rb`.
 
-#### The `#introduction` Method
+### The `#introduction` Method
 
-We'll be using our test errors to guide us through the requirements for this lab, so let's run the test suite to get started. To do that, run `learn test` in your terminal. Let's take a look at the first error:
+We'll be using our test errors to guide us through the requirements for this
+lab, so let's run the test suite to get started. To do that, run `learn test` in
+your terminal. Let's take a look at the first error:
 
-```bash
+```txt
 Failures:
 
   1) #introduction takes in an argument of a name and puts out a phrase with that name using string interpolation
@@ -29,7 +31,7 @@ Failures:
 
 Wow, that's a lot of information. The important part for us though is the line that tells us _what kind of error_ we are experiencing:
 
-```bash
+```txt
 NoMethodError:
        undefined method `introduction`
 ```
@@ -45,7 +47,7 @@ end
 
 Now we'll run our test suite again. You should see the following error:
 
-```bash
+```txt
 Failures:
 
   1) #introduction takes in an argument of a name and puts out a phrase with that name using string interpolation
@@ -84,7 +86,7 @@ end
 
 Run the test again and you'll see the following:
 
-```bash
+```txt
 Failures:
 
   1) #introduction takes in an argument of a name and puts out a phrase with that name using string interpolation
@@ -100,7 +102,7 @@ Failures:
 
 Now the important part of our error message is here:
 
-```bash
+```txt
 expected block to output "Hi, my name is Josh.\n" to stdout, but output nothing
 ```
 
@@ -120,7 +122,7 @@ end
 Run the test again and we should be passing the first of our two tests. Use the
 test output and the procedure we just followed to get the second test passing.
 
-#### The `#introduction_with_language` Method
+### The `#introduction_with_language` Method
 
 Define a method, `#introduction_with_language` that takes in two arguments,
 `name` and `language` and outputs the phrase: `"Hi, my name is #{name} and I am
